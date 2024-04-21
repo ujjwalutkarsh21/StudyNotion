@@ -1,0 +1,53 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,body{
+    overflow-x: hidden;
+}
+.homepage_bg{
+    background: url("../src/assets/imgvideo/Images/bghome.svg");
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.section_heading{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -.02em;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* app.css */
+
+.placeholder-translate-x-5::placeholder {
+    transform: translateX(15px);
+    transition: transform 0.3s ease;
+    /* Add a transition for a smooth effect */
+}
+/* CSS to hide the number input spinner arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* Remove default appearance */
+    appearance: none;
+    margin: 0;
+    /* Remove margin to prevent overlap with text */
+}
