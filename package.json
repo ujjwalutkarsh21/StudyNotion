@@ -1,0 +1,53 @@
+{
+  
+
+
+  "dependencies": {
+  
+
+
+    
+
+
+  "concurrently": "^8.2.0",
+  
+
+
+    
+
+
+  "react-app-rewired": "^2.2.1"
+  
+
+
+  },
+  
+
+
+  "scripts": {
+  
+
+
+    
+
+
+  "start:frontend": "cd frontend && npm start",
+  
+
+
+    
+
+
+  "start:backend": "cd backend && npm run dev",
+  
+
+
+    
+
+
+  "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\"  \"npm run start:frontend\" \"npm run start:backend\" "
+  
+
+
+  }
+}
